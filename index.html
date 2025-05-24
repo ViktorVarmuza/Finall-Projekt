@@ -1,11 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/bootswatch/dist/lux/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/flag-icon-css/css/flag-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flag-icons/css/flag-icons.min.css" />
+    <link rel="stylesheet" href="styles/main.css">
     <title>Document</title>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </head>
-<body>
-    
+
+<body class="">
+    <nav class="navbar navbar-expand-sm navbar-dark bg-black border-bottom border-2 border-white">
+        <div class="container-fluid">
+            <a class="me-5 mx-2 logo" href=""><span class="fi fi-it " style="font-size: 40px;"></span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mynavbar">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="javascript:void(0)">Kultura</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="javascript:void(0)">Historie</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="javascript:void(0)">Quiz</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button"
+                            data-bs-toggle="dropdown">Města</a>
+                        <ul class="dropdown-menu bg-black border border-2 border-white">
+                            <li><a class="dropdown-item" href="#">Link</a> </li>
+                            <li><a class="dropdown-item mid" href="#">Another link</a></li>
+                            <li><a class="dropdown-item" href="#">A third link</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <div class="carusely bg-black border border-2 border-black py-4">
+        <div id="demo" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active" aria-current="true"
+                    aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000">
+                    <img src="img/Rome.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="img/Neapol.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/Benátky.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                </div>
+            </div>
+
+
+            <button class="carousel-control-prev prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                <span class="carousel-control-next-icon " aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+
+        <div class="second-carousel text-white fw-bold text-center px-3">
+            <div class="second-item aktivni">
+                <h2 class="text-white">Řím</h2>
+                <p>Hlavní město Itálie, známé svými antickými památkami jako Koloseum, Forum Romanum a Pantheon. Řím je
+                    také sídlem Vatikánu.</p>
+                <img class="second-image rounded-circle" src="img/pantheon.jpg" alt="">
+                <div class="mt-5">
+                    <a class="p-2 border border-1 border-white" href="">Pokračovat</a>
+                </div>
+            </div>
+            <div class="second-item">
+                <h2 class="text-white">Neapol</h2>
+                <p>Neapol je významné město na jihu Itálie, proslulé svou historií, kulturou a kuchyní. Je známá jako
+                    rodiště pizzy a v její blízkosti se nachází sopka Vesuv a antické město Pompeje.</p>
+                <img class="second-image rounded-circle" src="img/pizza.jpeg" alt="">
+                <div class="mt-5">
+                    <a class="p-2 border border-1 border-white" href="">Pokračovat</a>
+                </div>
+            </div>
+            <div class="second-item">
+                <h2 class="text-white">Benátky</h2>
+                <p>Benátky jsou jedinečné město postavené na laguně, proslulé svými kanály, gondolami a historickými
+                    památkami jako náměstí svatého Marka, Dóžecí palác a most Rialto.</p>
+                <img class="second-image rounded-circle" src="img/gondola.png" alt="">
+                <div class="mt-5">
+                    <a class="p-2 border border-1 border-white" href="">Pokračovat</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="scripts/carousel.js"></script>
 </body>
+
 </html>

@@ -1,0 +1,63 @@
+.carousel{
+    max-width: 55%;
+}
+a{
+    text-decoration: none;
+    color: #ffffff;
+}
+.logo{
+    padding-right:3%;
+    border-right: solid 2px #ffffff;
+}
+
+
+.dropdown-menu{
+    border-radius: 5%;
+    color:rgb(255, 255, 255);
+    padding: 0;
+}
+
+.dropdown-item{
+    color: #ffffff;
+}
+.dropdown-item:hover{
+    transition: all 0.2s;
+    background-color: #383838;
+    color: #fefefe;
+}
+.mid{
+border-bottom: solid 1px #ffffff;
+border-top: solid 1px #ffffff;
+}
+.carousel-inner{
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border: solid 2px #ffffff;
+}
+.carusely{
+    display: flex;
+    justify-content: space-between;
+}
+.second-carousel{
+    margin: auto;
+    margin-top: 0px;
+    
+}
+.second-item{
+    display: none;
+}
+.second-image{
+    width: 30%;
+}
+.second-item h2{    /* obrys písmen */
+  font-size: 50px;
+}
+.second-carousel a:hover{
+    transition: all 0.5s;
+    background-color: #ffffff;
+    color: #000000;
+}
+.aktivni{
+    display: block;
+    z-index: 1;
+}
