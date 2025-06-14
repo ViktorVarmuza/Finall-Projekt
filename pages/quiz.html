@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../node_modules/bootswatch/dist/lux/bootstrap.min.css">
+    <link rel="stylesheet" href="../node_modules/flag-icon-css/css/flag-icons.min.css">
+    <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flag-icons/css/flag-icons.min.css" />
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/quiz.css">
+    <title>Document</title>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+
+<body class="bg-black">
+    <nav class="navbar navbar-expand-md navbar-dark bg-black border-bottom border-2 border-white">
+        <div class="container-fluid">
+            <a class="me-5 mx-2 logo" href=""><span class="fi fi-it " style="font-size: 40px;"></span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mynavbar">
+                <ul class="navbar-nav me-auto d-none d-md-flex">
+                    <li class="nav-item">
+                        <a class="nav-link " href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="historie.html">Historie</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="quiz.html">Quiz</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Města</a>
+                        <ul class="dropdown-menu bg-black border border-2 border-white">
+                            <li><a class="dropdown-item" href="#">Link</a></li>
+                            <li><a class="dropdown-item mid" href="#">Another link</a></li>
+                            <li><a class="dropdown-item" href="#">A third link</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item d-flex align-items-center px-2">
+                        <div class="form-check form-switch m-0">
+                            <input id="hudba-id" class="form-check-input rounded" type="checkbox" role="switch">
+                            <label class="form-check-label ms-2" for="hudba-id">Hudba</label>
+                            <audio id="hudba" src="../audio/song.mp3" loop></audio>
+                        </div>
+                    </li>
+                </ul>
+
+                <ul class="navbar-nav d-md-none mt-2">
+                    <li class="nav-item ps-2">
+                        <a class="nav-link" href="index.html">Domů</a>
+                    </li>
+                    <li class="nav-item ps-2">
+                        <a class="nav-link" href="pages/historie.html">Historie</a>
+                    </li>
+                    <li class="nav-item ps-2">
+                        <a class="nav-link" href="#">Quiz</a>
+                    </li>
+                    <li class="nav-item ps-2">
+                        <a class="nav-link" href="#">Města</a>
+                    </li>
+                    <li class="nav-item ps-2 mt-2">
+                        <div class="form-check form-switch m-0">
+                            <input id="hudba-id" class="form-check-input rounded" type="checkbox" role="switch">
+                            <label class="form-check-label ms-2" for="hudba-id">Hudba</label>
+                            <audio id="hudba" src="../audio/song.mp3" loop></audio>
+                        </div>
+                    </li>
+                    <li class="nav-item mt-2 ps-2">
+                        <a href="login.html" class="nav-link"><i class="fa-solid fa-circle-user"></i> Přihlášení</a>
+                    </li>
+
+                </ul>
+
+                <div class="d-none d-md-flex align-items-center me-4">
+                    <a href="login.html" class="nav-link fs-2"><i class="fa-solid fa-circle-user login"></i></a>
+                </div>
+
+            </div>
+
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <form>
+            <h4 class="mb-4 text-center text-white mt-5">Jaké je hlavní město Itálie?</h4>
+            <div class="options-row">
+                <div class="form-check mb-4 border-bottom border-1 border-white">
+                    <input class="form-check-input border border-white border-2" required type="radio"
+                        name="quizQuestion" id="option1" value="Milán" />
+                    <label class="form-check-label text-white" for="option1">Milán</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input border border-white border-2" type="radio" name="quizQuestion"
+                        id="option2" value="Florencie" />
+                    <label class="form-check-label text-white" for="option2">Florencie</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input border border-white border-2" type="radio" name="quizQuestion"
+                        id="option3" value="Řím" />
+                    <label class="form-check-label text-white" for="option3">Řím</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input border border-white border-2" type="radio" name="quizQuestion"
+                        id="option4" value="Benátky" />
+                    <label class="form-check-label text-white" for="option4">Benátky</label>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary tlacidlo">Odeslat odpověď</button>
+        </form>
+    </div>
+
+
+
+
+
+
+
+
+    <script type="module" src="../scripts/quiz.js"></script>
+    <script type="module" src="../scripts/hudba.js"></script>
+</body>
+
+</html>

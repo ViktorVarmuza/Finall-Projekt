@@ -12,7 +12,7 @@ a{
 
 
 .dropdown-menu{
-    border-radius: 5%;
+    
     color:rgb(255, 255, 255);
     padding: 0;
 }
@@ -60,4 +60,12 @@ border-top: solid 1px #ffffff;
 .aktivni{
     display: block;
     z-index: 1;
+}
+.login{
+    
+    color: gray;
+    transition: color ease-in-out 0.15s;
+}
+.login:hover{
+    color: white;
 }

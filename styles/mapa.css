@@ -1,0 +1,101 @@
+.pin {
+    position: absolute;
+    font-size: 110%;
+    cursor: pointer;
+
+}
+
+.fa-location-pin {
+    opacity: 0.8;
+}
+
+.plane {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    cursor: pointer;
+    color: #ffffff;
+    transform-origin: center center;
+    transition: transform 0.5s ease, left 1.2s ease, top 1.2s ease;
+    z-index: 100000;
+}
+
+.plane img {
+    width: 30px;
+}
+
+.mapa {
+    background-image: url(../img/Italy-Mapa.webp);
+    width: 40%;
+    aspect-ratio: 1.5;
+    height: 40%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    border-radius: 4%;
+    border: solid 3px #ffffff;
+}
+
+.mapa-container {
+    display: flex;
+    justify-content: space-evenly;
+    ;
+}
+
+.popis-mapy {
+    width: 40%;
+}
+
+
+.legenda {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    padding: 5px;
+    position: absolute;
+    bottom: 0;
+    right: 4%;
+    font-weight: bold;
+    color: #ffffff;
+    border: solid 3px #826D46;
+    background-color: #AB8F5C;
+
+}
+
+
+
+.accordion-item {
+    min-width: 200px;
+    max-width: 300px;
+    margin-right: 1rem;
+}
+
+.map-button:hover .tlacitko-icon {
+    transition: font-size 0.1s ease-in-out;
+    font-size: 130%;
+}
+
+.vizualni{
+display: flex;
+flex-direction: column;
+
+}
+.viz-button{
+    width: 150%;
+
+    margin: 10px;
+    background-color: black;
+    transition: all 0.2s ease;
+}
+.viz-button:hover {
+    background-color : #282828;
+    color: #ffffff;
+}
+
+.form-check-label {
+    transition: all 0.5s ease-in-out;
+}
+.form-check-input:checked + .form-check-label {
+    color: rgb(255, 255, 255);
+}
+

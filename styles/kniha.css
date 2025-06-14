@@ -1,0 +1,35 @@
+.kniha {
+    margin: 10%;
+    margin: auto;
+    display: flex;
+    border: 10px solid;
+    border-image: url('../img/border.png') 80 stretch;
+
+}
+
+.strana-left {
+    background-image: url('../img/strana-left.png');
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: auto 100%;
+   
+    border-right: 8px solid;
+    border-image: url('../img/stred.png') 10 stretch;
+
+    
+
+}
+
+.strana-right {
+    background-image: url('../img/strana-right.png');
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: auto 100%;
+
+    border-left: 8px solid;
+    border-image: url('../img/stred.png') 10 stretch;
+}
+
+.strana {
+    height: 600px;
+}

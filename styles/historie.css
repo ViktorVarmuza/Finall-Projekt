@@ -1,0 +1,13 @@
+.his:hover{
+    color: rgb(216, 216, 216);
+
+
+}
+.his{
+    color: rgb(182, 182, 182);
+
+}
+.nav-link.active {
+    color: rgb(255, 255, 255) !important;
+
+}

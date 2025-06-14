@@ -1,0 +1,23 @@
+    form {
+      max-width: 900px;
+      margin: auto;
+      margin-top: 50px;
+      
+    }
+    .options-row {
+      display: flex;
+      gap: 1.5rem;
+      padding: 10px;
+      justify-content: center; 
+      flex-wrap: wrap; 
+    }
+    .form-check {
+      flex: 1 1 auto; 
+      min-width: 100px;
+      text-align: center; 
+    }
+    .tlacidlo{
+      display: block;
+      margin: 2rem auto 0 auto;
+      width: 100%;
+    }

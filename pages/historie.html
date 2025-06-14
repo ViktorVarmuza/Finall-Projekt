@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../node_modules/bootswatch/dist/lux/bootstrap.min.css">
+    <link rel="stylesheet" href="../node_modules/flag-icon-css/css/flag-icons.min.css">
+    <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flag-icons/css/flag-icons.min.css" />
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/historie.css">
+    <title>Document</title>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+
+<body class="bg-black">
+    <nav class="navbar navbar-expand-md navbar-dark bg-black border-bottom border-2 border-white">
+        <div class="container-fluid">
+            <a class="me-5 mx-2 logo" href=""><span class="fi fi-it " style="font-size: 40px;"></span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mynavbar">
+                <ul class="navbar-nav me-auto d-none d-md-flex">
+                    <li class="nav-item">
+                        <a class="nav-link " href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="historie.html">Historie</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="quiz.html">Quiz</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Města</a>
+                        <ul class="dropdown-menu bg-black border border-2 border-white">
+                            <li><a class="dropdown-item" href="#">Link</a></li>
+                            <li><a class="dropdown-item mid" href="#">Another link</a></li>
+                            <li><a class="dropdown-item" href="#">A third link</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item d-flex align-items-center px-2">
+                        <div class="form-check form-switch m-0">
+                            <input id="hudba-id" class="form-check-input rounded" type="checkbox" role="switch">
+                            <label class="form-check-label ms-2" for="hudba-id">Hudba</label>
+                            <audio id="hudba" src="../audio/song.mp3" loop></audio>
+                        </div>
+                    </li>
+                </ul>
+
+                <ul class="navbar-nav d-md-none mt-2">
+                    <li class="nav-item ps-2">
+                        <a class="nav-link" href="index.html">Domů</a>
+                    </li>
+                    <li class="nav-item ps-2">
+                        <a class="nav-link" href="pages/historie.html">Historie</a>
+                    </li>
+                    <li class="nav-item ps-2">
+                        <a class="nav-link" href="#">Quiz</a>
+                    </li>
+                    <li class="nav-item ps-2">
+                        <a class="nav-link" href="#">Města</a>
+                    </li>
+                    <li class="nav-item ps-2 mt-2">
+                        <div class="form-check form-switch m-0">
+                            <input id="hudba-id" class="form-check-input rounded" type="checkbox" role="switch">
+                            <label class="form-check-label ms-2" for="hudba-id">Hudba</label>
+                            <audio id="hudba" src="../audio/song.mp3" loop></audio>
+                        </div>
+                    </li>
+                    <li class="nav-item mt-2 ps-2">
+                        <a href="login.html" class="nav-link"><i class="fa-solid fa-circle-user"></i> Přihlášení</a>
+                    </li>
+
+                </ul>
+
+                <div class="d-none d-md-flex align-items-center me-4">
+                    <a href="login.html" class="nav-link fs-2"><i class="fa-solid fa-circle-user login"></i></a>
+                </div>
+
+            </div>
+
+        </div>
+    </nav>
+
+    <div class="container mt-5 text-white text-center">
+        <h2 class="mb-3 text-white">Úvod do historie Itálie</h2>
+        <p>
+            Itálie má jednu z nejbohatších a nejvlivnějších historií na světě. Od legendárního založení Říma
+            přes slávu římské říše, přes období středověkých městských států až po renesanci, kdy se Itálie
+            stala kulturním centrem Evropy.
+        </p>
+        <p>
+            Během staletí se na jejím území střídala různá království a mocnosti, až se nakonec v 19. století
+            sjednotila v jeden stát. Dnes je Itálie moderní republikou, ale stopy její slavné minulosti jsou
+            vidět téměř na každém kroku – od antických památek až po umění a architekturu.
+        </p>
+
+        <div class="d-flex flex-wrap justify-content-center gap-4 mt-4 container-fluid">
+            <img src="../img/historie.jpg" alt="Historie 1" class="img-fluid rounded border border-white border-1"
+                style="width: 100%; max-width: 300px;">
+            <img src="../img/historie2.jpg" alt="Historie 2" class="img-fluid rounded border border-white border-1"
+                style="width: 100%; max-width: 300px;">
+            <img src="../img/historie3.jpg" alt="Historie 3" class="img-fluid rounded border border-white border-1"
+                style="width: 100%; max-width: 300px;">
+        </div>
+
+
+    </div>
+
+
+
+
+
+    <div class="container-fluid p-3 mt-5">
+
+
+        <div class="row">
+            <!-- Časová osa -->
+            <div class="col-12 col-lg-6 p-0">
+                <h2 class="text-center text-white mb-5">🕰️ Časová osa Itálie</h2>
+                <div class="position-relative" style="height: 800px;">
+                    <!-- Vertikální osa -->
+                    <div
+                        style="position: absolute; top: 0; left: 20px; width: 3px; height: 100%; background-color: white;">
+                    </div>
+
+                    <!-- Události -->
+                    <!-- top hodnoty rovnoměrně mezi 5 % a 95 % -->
+                    <!-- left: -2px pro celé boxy -->
+
+                    <div style="position: absolute; top: 5%; left: -8px;" class="">
+                        <div style="position: relative;">
+                            <div
+                                style="position: absolute; left: 20px; width: 20px; height: 20px; background-color: white; border-radius: 50%;">
+                            </div>
+                            <div style="margin-left: 50px;" class="text-white">
+                                <strong>753 př. n. l.</strong><br>
+                                Podle legendy byl Řím založen bratry Romulem a Remem. Tato událost se stala základem
+                                pozdější
+                                římské civilizace.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="position: absolute; top: 17%; left: -8px;" class="">
+                        <div style="position: relative;">
+                            <div
+                                style="position: absolute; left: 20px; width: 20px; height: 20px; background-color: white; border-radius: 50%;">
+                            </div>
+                            <div style="margin-left: 50px;" class="text-white">
+                                <strong>509 př. n. l.</strong><br>
+                                Vznik Římské republiky – občané začínají volit své zástupce, konec vlády králů.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="position: absolute; top: 29%; left: -8px;" class="">
+                        <div style="position: relative;">
+                            <div
+                                style="position: absolute; left: 20px; width: 20px; height: 20px; background-color: white; border-radius: 50%;">
+                            </div>
+                            <div style="margin-left: 50px;" class="text-white">
+                                <strong>27 př. n. l.</strong><br>
+                                Augustus se stává prvním císařem Říma. Začíná období císařství a slavná éra Pax Romana.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="position: absolute; top: 41%; left: -8px;" class="">
+                        <div style="position: relative;">
+                            <div
+                                style="position: absolute; left: 20px; width: 20px; height: 20px; background-color: white; border-radius: 50%;">
+                            </div>
+                            <div style="margin-left: 50px;" class="text-white">
+                                <strong>476 n. l.</strong><br>
+                                Pád Západořímské říše – začátek středověku, politická nestabilita a nové království na
+                                italském
+                                území.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="position: absolute; top: 53%; left: -8px;" class="">
+                        <div style="position: relative;">
+                            <div
+                                style="position: absolute; left: 20px; width: 20px; height: 20px; background-color: white; border-radius: 50%;">
+                            </div>
+                            <div style="margin-left: 50px;" class="text-white">
+                                <strong>1300</strong><br>
+                                Vrchol renesanční kultury – vznikají díla Danteho, Giotta a později Leonarda da Vinciho.
+                                Itálie
+                                se stává kulturním centrem Evropy.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="position: absolute; top: 65%; left: -8px;" class="">
+                        <div style="position: relative;">
+                            <div
+                                style="position: absolute; left: 20px; width: 20px; height: 20px; background-color: white; border-radius: 50%;">
+                            </div>
+                            <div style="margin-left: 50px;" class="text-white">
+                                <strong>1492</strong><br>
+                                Kryštof Kolumbus, původem z Janova, objevuje Nový svět – důkaz o významu Italů v éře
+                                zámořských
+                                objevů.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="position: absolute; top: 77%; left: -8px;" class="">
+                        <div style="position: relative;">
+                            <div
+                                style="position: absolute; left: 20px; width: 20px; height: 20px; background-color: white; border-radius: 50%;">
+                            </div>
+                            <div style="margin-left: 50px;" class="text-white">
+                                <strong>1861</strong><br>
+                                Po letech bojů o nezávislost je vyhlášeno sjednocení Itálie pod králem Viktorem
+                                Emanuelem
+                                II.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="position: absolute; top: 89%; left: -8px;" class="">
+                        <div style="position: relative;">
+                            <div
+                                style="position: absolute; left: 20px; width: 20px; height: 20px; background-color: white; border-radius: 50%;">
+                            </div>
+                            <div style="margin-left: 50px;" class="text-white">
+                                <strong>1946</strong><br>
+                                Itálie se stává republikou po referendu, které ukončilo monarchii – začátek moderní
+                                demokratické
+                                éry.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Umělecké styly -->
+            <div class="col-12 col-lg-6 mt-5 mt-lg-0 p-0 ps-2">
+                <h2 class="text-center text-white mb-5">🎨 Umění v Itálii podle období</h2>
+
+                <div class="rounded">
+                    <!-- Navigace tabů -->
+                    <ul class=" mt-5 nav nav-tabs flex-wrap justify-content-between border-1 border-white" id="artTabs"
+                        role="tablist">
+                        <li class="nav-item p-0" role="presentation">
+                            <button class="nav-link active  bg-black his border-white fs-4 p-0" id="antika-tab"
+                                data-bs-toggle="tab" data-bs-target="#antika" type="button" role="tab">Antika</button>
+                        </li>
+                        <li class="nav-item p-0" role="presentation">
+                            <button class="nav-link  his bg-black border-white fs-4 p-0" id="gotika-tab"
+                                data-bs-toggle="tab" data-bs-target="#gotika" type="button" role="tab">Gotika</button>
+                        </li>
+                        <li class="nav-item p-0" role="presentation">
+                            <button class="nav-link  bg-black his border-white fs-4 p-0" id="renesance-tab"
+                                data-bs-toggle="tab" data-bs-target="#renesance" type="button"
+                                role="tab">Renesance</button>
+                        </li>
+                        <li class="nav-item p-0" role="presentation">
+                            <button class="nav-link  bg-black his border-white fs-4 p-0" id="baroko-tab"
+                                data-bs-toggle="tab" data-bs-target="#baroko" type="button" role="tab">Baroko</button>
+                        </li>
+
+                    </ul>
+
+                    <div class="tab-content bg-black text-white p-4 border-top border-white" id="artTabsContent">
+
+                        <div class="tab-pane fade show active  text-center" id="antika" role="tabpanel">
+                            <h3 class="text-white">Antika</h3>
+                            <p><strong>Datování:</strong> přibližně 8. století př. n. l. – 5. století n. l.</p>
+                            <p>Umělecké a kulturní období starověkého Řecka a Říma. Vyznačuje se harmonií, proporcí,
+                                racionalitou a ideálem krásy.</p>
+                                <img class="rounded img-fluid w-50" src="../img/antika.jpg" alt="">
+                        </div>
+                        <div class="tab-pane fade text-center" id="gotika" role="tabpanel">
+                            <h3 class="text-white">Gotika (cca 12.–15. století)</h3>
+                            <p>Vyznačuje se vysokými katedrálami, štíhlými sloupy a barevnými vitrážemi. Příkladem je
+                                Dóm v
+                                Miláně. Umělci se začínali více zajímat o realističnost a duchovno.</p>
+                                <img class="rounded img-fluid w-50" src="../img/gotika.jpeg" alt="">
+                        </div>
+
+                        <div class="tab-pane fade text-center" id="renesance" role="tabpanel">
+                            <h3 class="text-white">Renesance (14.–16. století)</h3>
+                            <p>Vrchol italského umění – Michelangelo, Leonardo da Vinci a Botticelli. Důraz na lidské
+                                tělo,
+                                perspektivu a návrat ke klasickým ideálům.</p>
+                                <img class="rounded img-fluid w-50" src="../img/renesance.jpg" alt="">
+                        </div>
+
+
+                        <div class="tab-pane fade text-center" id="baroko" role="tabpanel">
+                            <h3 class="text-white">Baroko (17.–18. století)</h3>
+                            <p>Dramatické, bohaté a expresivní umění. Bernini a Caravaggio jsou klíčové osobnosti. Umění
+                                sloužilo církvi a propagandě.</p>
+                                <img class="rounded img-fluid w-50" src="../img/baroko.jpeg" alt="">
+                        </div>
+
+
+                        
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <script type="module" src="../scripts/hudba.js"></script>
+</body>
+
+</html>
